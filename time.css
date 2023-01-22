@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    animation: color-change-5x 20s linear infinite alternate both;
+    font-family: 'Comfortaa', cursive;
+}
+
+@keyframes color-change-5x {
+    0% {
+      background: #05d3f3bf;
+    }
+    25% {
+      background: #9c05f4b7;
+    }
+    50% {
+      background: #f405b4b7;
+    }
+    75% {
+      background: #4c05f4a9;
+    }
+    100% {
+      background: #0651f2ac;
+    }
+  }
+
+
+.circle {
+    width: 450px;
+    height:450px;
+    border-radius: 90%;
+    transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+    background-color: rgba(255, 255, 255, .1);
+}
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+.circle h3 {
+    margin: 180px 0 20px 0;
+    text-align: center;
+    font-size:large;
+    font-weight: 500;
+    color: white;
+}
+
+.circle #clock {
+    text-align: center;
+    color: white;
+}
+
